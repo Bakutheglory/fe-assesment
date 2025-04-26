@@ -1,0 +1,118 @@
+.underline{
+     width:75%;
+     height:3px ;
+     background-color:rgb(0,0,0,0.5);
+}
+.hero{
+    width:150px;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    border:2px solid ,rgba(255,255,255,0.7);
+    border-radius:50%;
+    background-color:#ffffff;
+    color:rgb(0,0,0);
+    font-weight:700;
+    font-size:20p;
+    top:20%;
+    left:20%;
+    position:absolute;
+    z-index:1000;
+}
+.shadow {
+    width: 171px;
+    height: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    filter: blur(20px);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    animation: spin 1s linear infinite;
+}
+.herowrapper{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background: radial-gradient(circle, white 0%,#522184 100%);
+    margin-top: 60px;
+    position: relative;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+
+}
+.buttons:nth-last-child{
+     opacity:0.5;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    transition:1s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.heading{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 70px;
+
+}
+.outerbox{
+    width: 70%;
+    height: 95vh;
+    padding: 10px 2.5px;
+    box-shadow: 0 0 20px 2px rgb(88, 84, 84);
+    background-color: rgba(160, 161, 161, 0);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 5px;
+    margin: auto;
+}
+.outerbox h1{
+    width: 85%;
+    font-weight: 700;
+    font-size: 40px;
+}
+@keyframes spin {
+    0% {
+        transform: translate(10px, 0px);   
+    }
+    12.5% {
+        transform: translate(7px, -7px);   
+    }
+    25% {
+        transform: translate(0px, -10px);
+    }
+    37.5% {
+        transform: translate(-7px, -7px);  
+    }
+    50% {
+        transform: translate(-10px, 0px); 
+    }
+    62.5% {
+        transform: translate(-7px, 7px);  
+    }
+    75% {
+        transform: translate(0px, 10px);  
+    }
+    87.5% {
+        transform: translate(7px, 7px);   
+    }
+    100% {
+        transform: translate(10px, 0px); 
+    }
+}
